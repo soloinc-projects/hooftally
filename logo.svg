@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hooftally mark. Grid: 64 x 64 units, origin top left; 1 unit = 16 px at 1024.
+     A yellow livestock ear tag carrying a five-bar tally (four strokes and the cross-stroke),
+     tilted 12 degrees as it hangs, on a barn-red tile. Every shape below is a number on that grid;
+     assets/generate-assets.py reads the elements of #tag from this file and draws every raster from them.
+     Colours are tokens.json palette values: barn-tile-top/bottom, tag-yellow-light/tag-yellow/tag-yellow-deep, ink. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="1024" height="1024" role="img" aria-label="Hooftally">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A3303B"/>
+      <stop offset="1" stop-color="#5C1220"/>
+    </linearGradient>
+    <linearGradient id="tagfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD95C"/>
+      <stop offset="0.55" stop-color="#F9BE2A"/>
+      <stop offset="1" stop-color="#E09A0B"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.4" stdDeviation="1.6" flood-color="#2B060C" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect id="tile-bg" x="0" y="0" width="64" height="64" rx="14" fill="url(#tile)"/>
+  <g id="tag" transform="rotate(-12 32 35)" filter="url(#shadow)">
+    <g id="tag-body" fill="url(#tagfill)">
+      <circle data-part="body" cx="32" cy="15.5" r="7"/>
+      <rect data-part="body" x="27" y="15.5" width="10" height="13" rx="0"/>
+      <polygon data-part="body" points="27,21 37,21 49,36 15,36"/>
+      <rect data-part="body" x="15" y="27" width="34" height="28" rx="9"/>
+    </g>
+    <circle data-part="stud" cx="32" cy="15.5" r="3.4" fill="#E09A0B"/>
+    <circle data-part="hole" cx="32" cy="15.5" r="1.7" fill="#1F1A1B"/>
+    <g id="tally" stroke="#1F1A1B" stroke-width="3.8" stroke-linecap="round" fill="none">
+      <line data-part="stroke" x1="22" y1="34" x2="22" y2="50"/>
+      <line data-part="stroke" x1="27.8" y1="34" x2="27.8" y2="50"/>
+      <line data-part="stroke" x1="33.6" y1="34" x2="33.6" y2="50"/>
+      <line data-part="stroke" x1="39.4" y1="34" x2="39.4" y2="50"/>
+      <line data-part="stroke" x1="17.8" y1="47.6" x2="45.2" y2="36.2"/>
+    </g>
+  </g>
+</svg>

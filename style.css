@@ -1,0 +1,27 @@
+@font-face{font-family:"Zilla Slab";src:url(/hooftally/fonts/ZillaSlab-SemiBold.ttf) format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(/hooftally/fonts/WorkSans-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(/hooftally/fonts/WorkSans-SemiBold.ttf) format("truetype");font-weight:600;font-display:swap}
+:root{--bg:#FAF7F0;--surface:#FFFFFF;--text:#1F1A1B;--soft:#5E5658;--accent:#8A1F2C;--fill:#F9BE2A;--on-fill:#1F1A1B;--edge:#8A8284;--sep:#E6E0D6;--income:#1D6B3A}
+@media (prefers-color-scheme:dark){:root{--bg:#141012;--surface:#211B1D;--text:#F3EEEC;--soft:#BDB3B4;--accent:#F9BE2A;--fill:#F9BE2A;--on-fill:#1F1A1B;--edge:#7C7274;--sep:#3A3134;--income:#7FD39B}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.55 "Work Sans",system-ui,sans-serif}
+main,header,footer{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+header{display:flex;align-items:center;gap:.75rem;padding-top:1.25rem}
+header a{color:var(--text);text-decoration:none;font:600 1.25rem "Zilla Slab",Georgia,serif;display:flex;align-items:center;gap:.6rem;min-height:44px}
+header img{width:40px;height:40px;border-radius:9px}
+h1,h2,h3{font-family:"Zilla Slab",Georgia,serif;font-weight:600;line-height:1.2}
+h1{font-size:clamp(1.9rem,6vw,2.6rem);margin:1.5rem 0 .75rem}
+h2{font-size:1.45rem;margin:2rem 0 .5rem}h3{font-size:1.15rem;margin:1.25rem 0 .25rem}
+a{color:var(--accent);text-underline-offset:2px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.lede{font-size:1.2rem;color:var(--text)}.soft{color:var(--soft)}
+.ctas{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.25rem 0}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:.7rem 1.2rem;border-radius:12px;background:var(--fill);color:var(--on-fill);border:1px solid var(--edge);font-weight:600;text-decoration:none}
+.proof{list-style:none;padding:0;display:grid;gap:.75rem}
+.proof li{background:var(--surface);border:1px solid var(--sep);border-radius:14px;padding:1rem}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1rem;margin:1rem 0}
+figure{margin:0}figure img{width:100%;height:auto;border-radius:18px;border:1px solid var(--sep)}
+figcaption{font-size:.95rem;color:var(--soft);margin-top:.4rem}
+footer{border-top:1px solid var(--sep);margin-top:3rem;padding-top:1rem;padding-bottom:2rem;font-size:.95rem;color:var(--soft)}
+footer nav{display:flex;flex-wrap:wrap;gap:1rem}footer nav a{min-height:44px;display:inline-flex;align-items:center}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
