@@ -1,6 +1,6 @@
-@font-face{font-family:"Zilla Slab";src:url(/hooftally/fonts/ZillaSlab-SemiBold.ttf) format("truetype");font-weight:600;font-display:swap}
-@font-face{font-family:"Work Sans";src:url(/hooftally/fonts/WorkSans-Regular.ttf) format("truetype");font-weight:400;font-display:swap}
-@font-face{font-family:"Work Sans";src:url(/hooftally/fonts/WorkSans-SemiBold.ttf) format("truetype");font-weight:600;font-display:swap}
+@font-face{font-family:"Zilla Slab";src:url(/hooftally/fonts/ZillaSlab-SemiBold.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(/hooftally/fonts/WorkSans-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(/hooftally/fonts/WorkSans-SemiBold.woff2) format("woff2");font-weight:600;font-display:swap}
 :root{--bg:#FAF7F0;--surface:#FFFFFF;--text:#1F1A1B;--soft:#5E5658;--accent:#8A1F2C;--fill:#F9BE2A;--on-fill:#1F1A1B;--edge:#8A8284;--sep:#E6E0D6;--income:#1D6B3A}
 @media (prefers-color-scheme:dark){:root{--bg:#141012;--surface:#211B1D;--text:#F3EEEC;--soft:#BDB3B4;--accent:#F9BE2A;--fill:#F9BE2A;--on-fill:#1F1A1B;--edge:#7C7274;--sep:#3A3134;--income:#7FD39B}}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
